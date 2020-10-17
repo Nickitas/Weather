@@ -1,0 +1,49 @@
+*{
+    font-size: large;
+}
+section#main{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgb(150, 150, 255);
+    background: url(../img/backgr.jpg) top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover; /* для растяжение если большая диагональ экрана*/
+}
+.row{
+    margin: 10px auto 5px auto;
+    max-width: 100%;
+    height: auto;
+    color: rgb(255, 255, 255);
+}
+.now_day{
+    background-color: rgba(87, 87, 189, 0.501);
+    border-radius: 25px;
+    width: 100%; 
+    text-align: center; 
+}
+.box{
+    display: block;
+    height: 100%;
+    width: auto;
+    margin: 1% auto;
+    padding: 5px 5px 5px 5px;
+    border-radius: 25px;
+    background-color: rgba(87, 87, 189, 0.501);
+    text-align: center;
+}
+
+@media(max-width: 995px) and (min-width: 600px){
+    .box{
+        width: 180px;
+        margin: 0;
+    }
+}
+@media(max-width: 599px) and (min-width: 300px){
+    .col-sm-4{
+        width: 30%;
+    }
+    .col-sm-4>.box>p{
+        font-size: small;
+    }
+}
